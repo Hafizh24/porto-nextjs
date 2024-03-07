@@ -1,3 +1,13 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next", "prettier"],
+  "plugins": ["prettier"],
+  "overrides": [
+    {
+      "files": ["*.js", "*.jsx"],
+      "parser": "espree",
+      "parserOptions": {
+        "ecmaVersion": 2020
+      }
+    }
+  ]
 }
