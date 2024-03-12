@@ -10,6 +10,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@material-tailwind/react": "^2.1.9",
     "next": "14.1.1",
     "react": "^18",
     "react-dom": "^18"

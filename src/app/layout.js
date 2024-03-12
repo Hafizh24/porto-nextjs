@@ -1,10 +1,12 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
+import StickyNavbar from './components/Navbar/index.jsx'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Hafizh Khairuddin'
+  title: 'Hafizh Khairuddin',
+  description: 'Personal Website of Hafizh Khairuddin'
 }
 
 export default function RootLayout({ children }) {
@@ -19,7 +21,10 @@ export default function RootLayout({ children }) {
         {/* <!-- AOS --> */}
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <StickyNavbar />
+        {children}
+      </body>
     </html>
   )
 }

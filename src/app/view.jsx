@@ -1,11 +1,14 @@
+'use client'
+
+import { Button } from '@material-tailwind/react'
 import Image from 'next/image'
 import Link from 'next/link'
 
 const HomeView = () => {
   return (
     <>
-      <div className=" pt-36">
-        <div className="container">
+      <div className="h-[90vh] bg-blue-gray-50">
+        <div className="">
           <div className=" flex flex-wrap">
             <div className=" w-full self-center px-4 lg:w-1/2">
               <h1 className=" text-base font-semibold text-primary md:text-xl lg:text-2xl">
@@ -18,26 +21,29 @@ const HomeView = () => {
                 Full Stack Developer
               </h2>
               <Link
-                href="https://drive.google.com/file/d/1NLqFNyM2SGpUkzXh2ofacc37aGilx5eB/view?usp=share_link"
-                target="_blank"
-                className="flex w-fit items-center justify-center rounded-full bg-primary px-8 py-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  className="mr-2 w-6"
-                  viewBox="0 0 16 16">
-                  <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z" />
-                  <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z" />
-                </svg>
-                <span>Download CV</span>
+                href="https://drive.google.com/file/d/1MldKKiAZgy8012CgsmC9H37GJqwQdcPL/view?usp=drive_link"
+                target="_blank">
+                <Button
+                  ripple={false}
+                  className=" flex items-center rounded-3xl bg-primary text-base">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    className="mr-2 w-6"
+                    viewBox="0 0 16 16">
+                    <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z" />
+                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z" />
+                  </svg>
+                  Download CV
+                </Button>
               </Link>
             </div>
             <div className="w-full self-end px-4 lg:w-1/2">
               <div className="relative mt-10 lg:right-0 lg:mt-9">
                 <Image
                   src={'/hafizh.png'}
-                  width={500}
-                  height={500}
+                  width={400}
+                  height={400}
                   alt="image"
                   className="relative z-10 mx-auto max-w-full"
                 />
