@@ -1,31 +1,34 @@
 'use client'
 
+import useTypewriter from '@/lib/useTypewriter'
 import { Button } from '@material-tailwind/react'
 import Image from 'next/image'
 import Link from 'next/link'
 
 const HomeView = () => {
+  const displayText = useTypewriter('Full Stack Developer', 100)
+
   return (
     <>
-      <div className="h-[90vh] bg-blue-gray-50">
-        <div className="">
+      <div className="h-[90vh]">
+        <div className="p-8">
           <div className=" flex flex-wrap">
             <div className=" w-full self-center px-4 lg:w-1/2">
               <h1 className=" text-base font-semibold text-primary md:text-xl lg:text-2xl">
                 Hello I&apos;m
-                <span className=" mt-1 block text-4xl font-bold text-dark lg:text-5xl">
+                <span className=" mt-1 block text-4xl font-bold text-dark  dark:text-white lg:text-5xl">
                   Hafizh Khairuddin
                 </span>
               </h1>
-              <h2 className=" mb-8 text-lg font-medium text-secondary lg:text-2xl">
-                Full Stack Developer
+              <h2 className="mb-8 text-lg text-secondary lg:text-2xl">
+                {displayText}
               </h2>
               <Link
                 href="https://drive.google.com/file/d/1MldKKiAZgy8012CgsmC9H37GJqwQdcPL/view?usp=drive_link"
                 target="_blank">
                 <Button
                   ripple={false}
-                  className=" flex items-center rounded-3xl bg-primary text-base">
+                  className=" flex items-center rounded-3xl bg-primary text-base font-semibold transition-all hover:opacity-85 hover:shadow-lg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -42,6 +45,7 @@ const HomeView = () => {
               <div className="relative mt-10 lg:right-0 lg:mt-9">
                 <Image
                   src={'/hafizh.png'}
+                  priority={true}
                   width={400}
                   height={400}
                   alt="image"

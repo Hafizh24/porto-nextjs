@@ -1,32 +1,31 @@
 import Link from 'next/link'
-import React from 'react'
 
 const Aboutview = () => {
   return (
-    <section className="pt-36">
+    <section className="px-8 pt-32">
       <div className="container">
         <div className="flex flex-wrap">
           <div className="mb-10 w-full px-4 lg:w-1/2">
-            <h4 className="mb-3 text-lg font-bold uppercase text-primary">
+            <h4 className="mb-3 text-lg font-bold uppercase text-dark dark:text-white lg:text-3xl">
               About Me
             </h4>
-            <p className="mb-2 max-w-xl text-base font-semibold leading-relaxed text-secondary lg:text-lg">
+            <p className="mb-2 max-w-xl text-base font-medium leading-relaxed text-secondary lg:text-lg">
               Passionate Full-Stack Developer based in Bandung, Indonesia, with
               expertise in JavaScript (Node.js), Golang, and ReactJS. I embarked my
               coding journey in December 2021.
             </p>
-            <p className="mb-2 max-w-xl text-base font-semibold leading-relaxed text-secondary lg:text-lg">
+            <p className="mb-2 max-w-xl text-base font-medium leading-relaxed text-secondary lg:text-lg">
               Graduated from Binar Academy Full Stack Web Development bootcamp and
               completed specialized training as a Golang backend developer at Studi
               DevSecOps.
             </p>
-            <p className="max-w-xl text-base font-semibold leading-relaxed text-secondary lg:text-lg">
+            <p className="max-w-xl text-base font-medium leading-relaxed text-secondary lg:text-lg">
               Fast learner, constantly seeking new skills and technologies. Eager to
               contribute to impactful projects and collaborate with dynamic teams.
             </p>
           </div>
           <div className="w-full px-4 lg:w-1/2">
-            <h3 className="mb-4 text-2xl font-semibold text-dark lg:pt-10 lg:text-3xl">
+            <h3 className="mb-4 text-2xl font-medium text-dark dark:text-white lg:pt-10 lg:text-3xl">
               Let&apos;s get in touch
             </h3>
             <p className="mb-6 text-base font-medium text-secondary lg:text-lg">
@@ -38,7 +37,7 @@ const Aboutview = () => {
               <Link
                 href={'https://www.linkedin.com/in/hafizh-khairuddin-597650227/'}
                 target="_blank"
-                className="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                className="border-slate-300 text-slate-300 mr-3 flex h-9 w-9 items-center justify-center rounded-full border hover:border-primary hover:bg-primary hover:text-white">
                 <svg
                   role="img"
                   width="20"
@@ -53,7 +52,7 @@ const Aboutview = () => {
               <Link
                 href={'https://github.com/Hafizh24'}
                 target="_blank"
-                className="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                className="border-slate-300 text-slate-300 mr-3 flex h-9 w-9 items-center justify-center rounded-full border hover:border-primary hover:bg-primary hover:text-white">
                 <svg
                   width="20"
                   className="fill-current"

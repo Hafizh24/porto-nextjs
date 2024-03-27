@@ -9,6 +9,7 @@ import {
 } from '@material-tailwind/react'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
+import ThemeToggle from '../utils/ThemeToggle'
 
 const StickyNavbar = () => {
   const [openNav, setOpenNav] = useState(false)
@@ -23,29 +24,33 @@ const StickyNavbar = () => {
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography as="li" className="group p-1">
-        <Link href={'/'} className="text-lg text-dark group-hover:text-primary">
+        <Link
+          href={'/'}
+          className="text-lg text-dark transition-all group-hover:text-primary dark:text-white">
           Home
         </Link>
       </Typography>
       <Typography as="li" className="group p-1">
-        <Link href={'/about'} className="text-lg text-dark group-hover:text-primary">
+        <Link
+          href={'/about'}
+          className="text-lg text-dark transition-all group-hover:text-primary dark:text-white">
           About
         </Link>
       </Typography>
       <Typography as="li" className="group p-1">
         <Link
           href={'/projects'}
-          className="text-lg text-dark group-hover:text-primary">
+          className="text-lg text-dark transition-all group-hover:text-primary dark:text-white">
           Projects
         </Link>
       </Typography>
-      <Typography as="li" className="group p-1">
+      {/* <Typography as="li" className="group p-1">
         <Link
           href={'/contact'}
-          className="text-lg text-dark group-hover:text-primary">
+          className="text-lg text-dark transition-all group-hover:text-primary">
           Contact
         </Link>
-      </Typography>
+      </Typography> */}
     </ul>
   )
 
@@ -58,20 +63,10 @@ const StickyNavbar = () => {
           </Link>
           <div className=" ml-20 flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>
-            {/* <div className="flex items-center gap-x-1">
-              <Button variant="text" size="sm" className="hidden lg:inline-block">
-                <span>Log In</span>
-              </Button>
-              <Button
-                variant="gradient"
-                size="sm"
-                className="hidden lg:inline-block">
-                <span>Sign in</span>
-              </Button>
-            </div> */}
-            <IconButton
+            <ThemeToggle />
+            {/* <IconButton
               variant="text"
-              className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+              className="text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent ml-auto h-6 w-6 lg:hidden"
               ripple={false}
               onClick={() => setOpenNav(!openNav)}>
               {openNav ? (
@@ -102,10 +97,10 @@ const StickyNavbar = () => {
                   />
                 </svg>
               )}
-            </IconButton>
+            </IconButton> */}
           </div>
         </div>
-        <MobileNav open={openNav}>
+        {/* <MobileNav open={openNav}>
           {navList}
           <div className="flex items-center gap-x-1">
             <Button fullWidth variant="text" size="sm" className="">
@@ -115,7 +110,7 @@ const StickyNavbar = () => {
               <span>Sign in</span>
             </Button>
           </div>
-        </MobileNav>
+        </MobileNav> */}
       </Navbar>
     </>
   )

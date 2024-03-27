@@ -2,6 +2,7 @@
 const withMT = require('@material-tailwind/react/utils/withMT')
 
 module.exports = withMT({
+  darkMode: 'class',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -10,7 +11,7 @@ module.exports = withMT({
   theme: {
     extend: {
       colors: {
-        primary: '#06b6d4',
+        primary: '#00A9FF',
         secondary: '#64748b',
         dark: '#0f172a'
       }
