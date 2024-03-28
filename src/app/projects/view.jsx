@@ -106,18 +106,18 @@ const listProjects = [
     icon3: icon.express,
     url_preview: '',
     url_github: 'https://github.com/Hafizh24/Minpro-03-POS'
-  },
-  {
-    title: 'Gamers Heaven',
-    description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, consequatur! Enim, nobis!',
-    image: '/projects/2.png',
-    icon1: icon.react,
-    icon2: icon.javascript,
-    icon3: icon.mySQL,
-    url_preview: '',
-    url_github: ''
   }
+  // {
+  //   title: 'Gamers Heaven',
+  //   description:
+  //     'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, consequatur! Enim, nobis!',
+  //   image: '/projects/2.png',
+  //   icon1: icon.react,
+  //   icon2: icon.javascript,
+  //   icon3: icon.mySQL,
+  //   url_preview: '',
+  //   url_github: ''
+  // }
 ]
 
 const ProjectsView = () => {
