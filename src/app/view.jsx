@@ -10,7 +10,7 @@ const HomeView = () => {
 
   return (
     <>
-      <div className="h-[90vh]">
+      <div className="mb-4">
         <div className="p-8">
           <div className=" flex flex-wrap">
             <div className=" w-full self-center px-4 lg:w-1/2">

@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const Aboutview = () => {
   return (
-    <section className="px-8 pt-32">
+    <section className="mb-56 px-8 pt-32">
       <div className="container">
         <div className="flex flex-wrap">
           <div className="mb-10 w-full px-4 lg:w-1/2">

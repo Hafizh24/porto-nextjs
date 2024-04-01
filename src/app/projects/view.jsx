@@ -104,8 +104,8 @@ const listProjects = [
     icon1: icon.react,
     icon2: icon.chakra_ui,
     icon3: icon.express,
-    url_preview: '',
-    url_github: 'https://github.com/Hafizh24/Minpro-03-POS'
+    url_preview: 'https://cash-here.hafizhkh.site/',
+    url_github: 'https://github.com/Hafizh24/CashHere'
   }
   // {
   //   title: 'Gamers Heaven',
