@@ -1,12 +1,6 @@
 'use client'
 
-import {
-  Navbar,
-  MobileNav,
-  Typography,
-  Button,
-  IconButton
-} from '@material-tailwind/react'
+import { Navbar, Typography, IconButton, Collapse } from '@material-tailwind/react'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import ThemeToggle from '../utils/ThemeToggle'
@@ -63,19 +57,19 @@ const StickyNavbar = () => {
           <Link href="/" className=" py-2 text-lg font-bold uppercase text-primary">
             HafizhKh
           </Link>
-          <div className=" ml-24 flex items-center gap-4">
-            <div className="mr-4 hidden lg:block">{navList}</div>
+          <div className="flex w-full items-center">
+            <div className="hidden lg:ml-8 lg:mr-4 lg:block">{navList}</div>
             <ThemeToggle />
-            {/* <IconButton
+            <IconButton
               variant="text"
-              className="text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent ml-auto h-6 w-6 lg:hidden"
+              className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
               ripple={false}
               onClick={() => setOpenNav(!openNav)}>
               {openNav ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
-                  className="h-6 w-6"
+                  className="h-6 w-6 dark:text-white"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                   strokeWidth={2}>
@@ -88,7 +82,7 @@ const StickyNavbar = () => {
               ) : (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
+                  className="h-6 w-6 dark:text-white"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth={2}>
@@ -99,20 +93,10 @@ const StickyNavbar = () => {
                   />
                 </svg>
               )}
-            </IconButton> */}
+            </IconButton>
           </div>
         </div>
-        {/* <MobileNav open={openNav}>
-          {navList}
-          <div className="flex items-center gap-x-1">
-            <Button fullWidth variant="text" size="sm" className="">
-              <span>Log In</span>
-            </Button>
-            <Button fullWidth variant="gradient" size="sm" className="">
-              <span>Sign in</span>
-            </Button>
-          </div>
-        </MobileNav> */}
+        <Collapse open={openNav}>{navList}</Collapse>
       </Navbar>
     </>
   )
