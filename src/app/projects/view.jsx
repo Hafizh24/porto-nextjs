@@ -93,6 +93,7 @@ const listProjects = [
     icon1: icon.react,
     icon2: icon.tailwind,
     icon3: icon.express,
+    icon4: icon.mySQL,
     url_preview: 'https://jcwd020801.purwadhikabootcamp.com',
     url_github: 'https://github.com/Hafizh24/FreshFinds'
   },
@@ -104,6 +105,7 @@ const listProjects = [
     icon1: icon.react,
     icon2: icon.chakra_ui,
     icon3: icon.express,
+    icon4: icon.mySQL,
     url_preview: 'https://cash-here.hafizhkh.site/',
     url_github: 'https://github.com/Hafizh24/CashHere'
   }
@@ -142,6 +144,8 @@ const ProjectsView = () => {
                 icon1={project.icon1}
                 icon2={project.icon2}
                 icon3={project.icon3}
+                icon4={project.icon4}
+                icon5={project.icon5}
                 url_github={project.url_github}
                 url_preview={project.url_preview}
               />

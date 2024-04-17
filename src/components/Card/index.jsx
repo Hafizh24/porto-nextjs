@@ -2,8 +2,18 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const CustomCard = (props) => {
-  const { title, description, image, icon1, icon2, icon3, url_preview, url_github } =
-    props
+  const {
+    title,
+    description,
+    image,
+    icon1,
+    icon2,
+    icon3,
+    icon4,
+    icon5,
+    url_preview,
+    url_github
+  } = props
   return (
     <div className="flex w-2/5 flex-col justify-between rounded-xl bg-white p-4 shadow dark:bg-dark">
       <Image
@@ -22,6 +32,8 @@ const CustomCard = (props) => {
           {icon1 && icon1}
           {icon2 && icon2}
           {icon3 && icon3}
+          {icon4 && icon4}
+          {icon5 && icon5}
         </div>
         <div className=" flex items-center">
           <Link

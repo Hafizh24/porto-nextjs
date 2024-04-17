@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const Aboutview = () => {
   return (
-    <section className="mb-56 px-8 pt-32">
+    <section className="mb-10 px-8 pt-10 lg:mb-56 lg:pt-32">
       <div className="container">
         <div className="flex flex-wrap">
           <div className="mb-10 w-full px-4 lg:w-1/2">
@@ -37,7 +37,7 @@ const Aboutview = () => {
               <Link
                 href={'https://www.linkedin.com/in/hafizh-khairuddin-597650227/'}
                 target="_blank"
-                className="border-slate-300 text-slate-300 mr-3 flex h-9 w-9 items-center justify-center rounded-full border hover:border-primary hover:bg-primary hover:text-white">
+                className="border-slate-300 text-slate-300 mr-3 flex h-9 w-9 items-center justify-center rounded-full border hover:border-primary hover:bg-primary hover:text-white dark:border-dark dark:hover:text-dark">
                 <svg
                   role="img"
                   width="20"
@@ -52,7 +52,7 @@ const Aboutview = () => {
               <Link
                 href={'https://github.com/Hafizh24'}
                 target="_blank"
-                className="border-slate-300 text-slate-300 mr-3 flex h-9 w-9 items-center justify-center rounded-full border hover:border-primary hover:bg-primary hover:text-white">
+                className="border-slate-300 text-slate-300 mr-3 flex h-9 w-9 items-center justify-center rounded-full border hover:border-primary hover:bg-primary hover:text-white dark:border-dark dark:hover:text-dark">
                 <svg
                   width="20"
                   className="fill-current"
