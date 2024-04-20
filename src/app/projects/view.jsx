@@ -4,7 +4,7 @@ import { Fragment } from 'react'
 const icon = {
   chakra_ui: (
     <svg
-      className="w-9 rounded fill-[#319795]"
+      className="w-7 rounded fill-[#319795] lg:w-9"
       role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg">
@@ -14,7 +14,7 @@ const icon = {
   ),
   express: (
     <svg
-      className="w-8 dark:fill-white"
+      className="w-7 dark:fill-white lg:w-8"
       role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +24,7 @@ const icon = {
   ),
   react: (
     <svg
-      className="w-9 fill-[#61DAFB]"
+      className="w-7 fill-[#61DAFB] lg:w-9"
       role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +34,7 @@ const icon = {
   ),
   tailwind: (
     <svg
-      className="w-9 fill-[#06B6D4]"
+      className="w-7 fill-[#06B6D4] lg:w-9"
       role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg">
@@ -74,7 +74,7 @@ const icon = {
   ),
   mySQL: (
     <svg
-      className="w-12 fill-[#4479A1]"
+      className="w-10 fill-[#4479A1] lg:w-12"
       role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg">
@@ -134,7 +134,7 @@ const ProjectsView = () => {
           </div>
         </div>
 
-        <div className=" flex flex-wrap justify-center gap-10">
+        <div className="flex flex-wrap justify-center px-4">
           {listProjects.map((project, index) => (
             <Fragment key={index}>
               <CustomCard
