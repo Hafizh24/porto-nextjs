@@ -10,18 +10,16 @@ const Aboutview = () => {
               About Me
             </h4>
             <p className="mb-2 max-w-xl text-base font-medium leading-relaxed text-secondary lg:text-lg">
-              Passionate Full-Stack Developer based in Bandung, Indonesia, with
-              expertise in JavaScript (Node.js), Golang, and ReactJS. I embarked my
-              coding journey in December 2021.
+              Passionate Full Stack Developer skilled in both front-end and back-end
+              development. With expertise in JavaScript, Golang, React.js, and
+              Node.js,
             </p>
             <p className="mb-2 max-w-xl text-base font-medium leading-relaxed text-secondary lg:text-lg">
-              Graduated from Binar Academy Full Stack Web Development bootcamp and
-              completed specialized training as a Golang backend developer at Studi
-              DevSecOps.
-            </p>
-            <p className="max-w-xl text-base font-medium leading-relaxed text-secondary lg:text-lg">
-              Fast learner, constantly seeking new skills and technologies. Eager to
-              contribute to impactful projects and collaborate with dynamic teams.
+              I have built and managed web applications that solve real-world
+              problems. My journey has been enriched through bootcamps and personal
+              projects, allowing me to develop strong problem-solving skills and
+              attention to detail. I&apos;m continuously driven by the desire to
+              create innovative and impactful web solutions.
             </p>
           </div>
           <div className="w-full px-4 lg:w-1/2">
@@ -29,8 +27,10 @@ const Aboutview = () => {
               Let&apos;s get in touch
             </h3>
             <p className="mb-6 text-base font-medium text-secondary lg:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-              consequatur odit reprehenderit. Et quae corrupti animi optio modi?
+              I’m always open to discussing new projects, creative ideas, or
+              opportunities to contribute to impactful web solutions. Feel free to
+              reach out through any of my platforms below, and let&apos;s create
+              something amazing together!
             </p>
             <div className="flex items-center">
               {/* <!-- Linkedin --> */}

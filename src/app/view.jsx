@@ -23,23 +23,25 @@ const HomeView = () => {
               <h2 className="mb-8 text-lg text-secondary lg:text-2xl">
                 {displayText}
               </h2>
-              <Link
-                href="https://drive.google.com/file/d/1MldKKiAZgy8012CgsmC9H37GJqwQdcPL/view?usp=drive_link"
-                target="_blank">
-                <Button
-                  ripple={false}
-                  className=" flex items-center rounded-3xl bg-primary text-base font-semibold transition-all hover:opacity-85 hover:shadow-lg">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    className="mr-2 w-6"
-                    viewBox="0 0 16 16">
-                    <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z" />
-                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z" />
-                  </svg>
-                  Download CV
-                </Button>
-              </Link>
+              <div className="w-fit">
+                <Link
+                  href="https://drive.google.com/file/d/1HOwPuGKBtgQRAXB74EyctXoVDDeERvMV/view?usp=sharing"
+                  target="_blank">
+                  <Button
+                    ripple={false}
+                    className=" flex items-center rounded-3xl bg-primary text-base font-semibold transition-all hover:opacity-85 hover:shadow-lg">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      className="mr-2 w-6"
+                      viewBox="0 0 16 16">
+                      <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z" />
+                      <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z" />
+                    </svg>
+                    Download CV
+                  </Button>
+                </Link>
+              </div>
             </div>
             <div className="w-full self-end px-4 lg:w-1/2">
               <div className="relative mt-10 lg:right-0 lg:mt-9">

@@ -88,25 +88,25 @@ const listProjects = [
   {
     title: 'Fresh Finds',
     description:
-      'Online Grocery Web App adalah sebuah aplikasi e-commerce yang memiliki fungsi untuk berbelanja secara online, dimana si pembeli dapat memilih lokasi toko tersebut.',
+      'Fresh Finds is an e-commerce application that allows users to shop online, where the buyer can select the location of the store.',
     image: '/projects/fresh-finds.png',
     icon1: icon.react,
     icon2: icon.tailwind,
     icon3: icon.express,
     icon4: icon.mySQL,
-    url_preview: 'https://jcwd020801.purwadhikabootcamp.com',
+    url_preview: '',
     url_github: 'https://github.com/Hafizh24/FreshFinds'
   },
   {
     title: 'Cash Here',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minus suscipit nam.',
-    image: '/projects/cash-here.png',
+      'Cash Here is a web-based cashier application designed for managing retail transactions and inventory.',
+    image: '/projects/cash-here.jpeg',
     icon1: icon.react,
     icon2: icon.chakra_ui,
     icon3: icon.express,
     icon4: icon.mySQL,
-    url_preview: 'https://cash-here.hafizhkh.site/',
+    url_preview: '',
     url_github: 'https://github.com/Hafizh24/CashHere'
   }
   // {

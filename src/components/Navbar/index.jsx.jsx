@@ -4,9 +4,12 @@ import { Navbar, Typography, IconButton, Collapse } from '@material-tailwind/rea
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import ThemeToggle from '../utils/ThemeToggle'
+import { usePathname } from 'next/navigation'
 
 const StickyNavbar = () => {
   const [openNav, setOpenNav] = useState(false)
+  const pathname = usePathname()
+  // console.log(pathname)
 
   useEffect(() => {
     window.addEventListener(
@@ -15,38 +18,53 @@ const StickyNavbar = () => {
     )
   }, [])
 
-  const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <Typography as="li" className="group p-1">
-        <Link
-          href={'/'}
-          className="text-lg text-dark transition-all group-hover:text-primary dark:text-white">
-          Home
-        </Link>
-      </Typography>
-      <Typography as="li" className="group p-1">
-        <Link
-          href={'/about'}
-          className="text-lg text-dark transition-all group-hover:text-primary dark:text-white">
-          About
-        </Link>
-      </Typography>
-      <Typography as="li" className="group p-1">
-        <Link
-          href={'/projects'}
-          className="text-lg text-dark transition-all group-hover:text-primary dark:text-white">
-          Projects
-        </Link>
-      </Typography>
-      {/* <Typography as="li" className="group p-1">
-        <Link
-          href={'/contact'}
-          className="text-lg text-dark transition-all group-hover:text-primary">
-          Contact
-        </Link>
-      </Typography> */}
-    </ul>
-  )
+  // const navList = (
+  //   <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+  //     <Typography as="li" className="group p-1">
+  //       <Link
+  //         href={'/'}
+  //         className="text-lg text-dark transition-all group-hover:text-primary dark:text-white">
+  //         Home
+  //       </Link>
+  //     </Typography>
+  //     <Typography as="li" className="group p-1">
+  //       <Link
+  //         href={'/about'}
+  //         className="text-lg text-dark transition-all group-hover:text-primary dark:text-white">
+  //         About
+  //       </Link>
+  //     </Typography>
+  //     <Typography as="li" className="group p-1">
+  //       <Link
+  //         href={'/projects'}
+  //         className="text-lg text-dark transition-all group-hover:text-primary dark:text-white">
+  //         Projects
+  //       </Link>
+  //     </Typography>
+  //     {/* <Typography as="li" className="group p-1">
+  //       <Link
+  //         href={'/contact'}
+  //         className="text-lg text-dark transition-all group-hover:text-primary">
+  //         Contact
+  //       </Link>
+  //     </Typography> */}
+  //   </ul>
+  // )
+
+  const navList = [
+    {
+      title: 'Home',
+      url: '/'
+    },
+    {
+      title: 'About',
+      url: '/about'
+    },
+    {
+      title: 'Projects',
+      url: '/projects'
+    }
+  ]
 
   return (
     <>
@@ -58,7 +76,19 @@ const StickyNavbar = () => {
             HafizhKh
           </Link>
           <div className="flex w-full items-center">
-            <div className="hidden lg:ml-8 lg:mr-4 lg:block">{navList}</div>
+            <div className="hidden lg:ml-8 lg:mr-4 lg:block">
+              <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+                {navList.map((list, index) => (
+                  <Typography as="li" key={index} className="group p-1">
+                    <Link
+                      href={list.url}
+                      className={`text-lg text-dark transition-all group-hover:text-primary dark:text-white ${pathname === list.url ? 'text-primary underline underline-offset-[6px]' : ''}`}>
+                      {list.title}
+                    </Link>
+                  </Typography>
+                ))}
+              </ul>
+            </div>
             <ThemeToggle />
             <IconButton
               variant="text"
@@ -96,7 +126,7 @@ const StickyNavbar = () => {
             </IconButton>
           </div>
         </div>
-        <Collapse open={openNav}>{navList}</Collapse>
+        {/* <Collapse open={openNav}>{navList}</Collapse> */}
       </Navbar>
     </>
   )
